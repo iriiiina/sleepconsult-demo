@@ -3,7 +3,8 @@ name: Ольга Мырсикова
 email: olgamyrsikova@gmail.com
 description: Sleep Consult Web Page
 permalink: /:title
-url: https://sleepconsult.eu
+url: https://iriiiina.github.io
+baseurl: /sleepconsult-demo
 
 # Build Settings
 markdown: kramdown
