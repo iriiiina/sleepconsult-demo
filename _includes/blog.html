@@ -1,0 +1,31 @@
+<section id="blog">
+	<h2>Полезные статьи</h2>
+
+	<div id="blog-content">
+
+		{% for post in site.posts %}
+		<div class="blog-preview">
+			<a href="{{ post.url | prepend: site.url }}">
+				<picture>
+					<source srcset="{{ site.url}}/assets/post{{ post.url }}-500px.webp" type="image/webp">
+					<source srcset="{{ site.url}}/assets/post{{ post.url }}-500px.png" type="image/png">
+					<img class="blog-image" src="{{ site.url}}/assets/post{{ post.url }}-500px.png" loading="lazy"
+						alt="Илюстрация поста">
+				</picture>
+			</a>
+			<p class="blog-preview-title"><a href="{{ post.url prepend: site.url }}">{{ post.title }}</a></p>
+			<div class="blog-preview-content">
+				{{ post.excerpt }}
+			</div>
+			<div class="blog-preview-more"><a href="{{ post.url prepend: site.url }}">читать дальше</a></div>
+		</div>
+		{% endfor %}
+
+	</div>
+
+	<div class="instagram-more">
+		<a href="https://www.instagram.com/sleep.consult/" target="_blank">
+			<p>читать больше в Инстаграм</p>
+		</a>
+	</div>
+</section>

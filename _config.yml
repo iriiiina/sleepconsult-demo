@@ -1,0 +1,14 @@
+# Site Settings
+name: Ольга Мырсикова
+email: olgamyrsikova@gmail.com
+description: Sleep Consult Web Page
+permalink: /:title
+url: https://sleepconsult.eu
+
+# Build Settings
+markdown: kramdown
+
+# Other
+safe: true
+timezone: "Europe/Tallinn"
+encoding: utf-8

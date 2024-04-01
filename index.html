@@ -1,0 +1,100 @@
+---
+title: Ольга Мырсикова
+---
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ page.title }}</title>
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-M9RWF7G');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3PCQPE7NW3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-3PCQPE7NW3');
+	</script>
+
+	<!-- SEO -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/favicons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#FFFFFF">
+
+	<link rel="manifest" href="{{ site.url }}/manifest.json">
+	<link rel="canonical" href="{{ site.url }}">
+
+	<meta name="description" content="наладка сна за неделю | самостоятельное засыпание | авторский курс по сну" />
+	<meta property="og:url" content="{{ site.url }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Ольга Мырсикова | Консультант по детскому сну" />
+	<meta property="og:site_name" content="Ольга Мырсикова | Консультант по детскому сну" />
+	<meta property="og:description"
+		content="наладка сна за неделю | самостоятельное засыпание | авторский курс по сну" />
+	<meta property="og:image" content="{{ site.url }}/assets/preview.png" />
+	<meta property="og:image:url" content="{{ site.url }}/assets/preview.png" />
+	<meta property="og:image:secure_url" content="{{ site.url }}/assets/preview.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="721" />
+	<meta property="og:locale" content="ru-RU" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9RWF7G" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	{% include header.html %}
+
+	<main>
+
+		{% include home.html %}
+
+		{% include intro.html %}
+
+		{% include prices.html %}
+
+		{% include webinars.html %}
+
+		{% include about.html %}
+
+		{% include blog.html %}
+
+		{% include contacts.html %}
+
+	</main>
+
+	{% include footer.html %}
+
+</body>
+
+</html>

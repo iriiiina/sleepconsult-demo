@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://sleep-consult.eu/</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://sleepconsult.eu/sz-i-privyazannost</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://sleepconsult.eu/metodiki-sz</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://sleepconsult.eu/chto-takoe-cz</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://sleepconsult.eu/son-novorozdennyh-0-4</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://sleepconsult.eu/pochemu-rebenok-ne-spit-40-minut</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://sleepconsult.eu/fioletovyi-plach</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

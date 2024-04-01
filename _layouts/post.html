@@ -1,0 +1,104 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ page.title }}</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3PCQPE7NW3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-3PCQPE7NW3');
+	</script>
+
+	<!-- SEO -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/favicons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#FFFFFF">
+
+	<link rel="manifest" href="{{ site.url }}/manifest.json">
+
+	<meta name="description" content="{{ page.excerpt }}" />
+	<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+	<meta property="og:type" content="article" />
+	<meta property="article:publisher" content="{{ site.url }}" />
+	<meta property="article:author" content="Ольга Мырсикова" />
+	<meta property="article:tag" content="{{ page.tag }}" />
+	<meta property="og:title" content="{{ page.title }} | Ольга Мырсикова" />
+	<meta property="og:site_name" content="Ольга Мырсикова | Консультант по детскому сну" />
+	<meta property="og:description" content="{{ page.excerpt }}" />
+	<meta property="og:image" content="{{ site.url }}/assets/post/{{ page.url }}-1200px.png" />
+	<meta property="og:image:url" content="{{ site.url }}/assets/post/{{ page.url }}-1200px.png" />
+	<meta property="og:image:secure_url" content="{{ site.url }}/assets/post/{{ page.url }}-1200px.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:locale" content="ru-RU" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	{% include header-post.html %}
+
+	<main>
+
+		<div id="post">
+			<h1 id="post-title">{{ page.title }}</h1>
+			<div id="post-content">
+				{{ content }}
+			</div>
+		</div>
+
+		<p id="post-stars">&starf;&nbsp;&starf;&nbsp;&starf;&nbsp;&starf;&nbsp;&starf;</p>
+
+		<div id="post-3">
+			{% for post in site.posts limit:3 %}
+			<div class="post-3-preview">
+				<a href="{{ post.url | prepend: site.url }}">
+					<picture>
+						<source srcset="{{ site.url}}/assets/post{{ post.url }}-500px.webp" type="image/webp">
+						<source srcset="{{ site.url}}/assets/post{{ post.url }}-500px.png" type="image/png">
+						<img class="post-3-image" src="{{ site.url}}/assets/post{{ post.url }}-500px.png" loading="lazy"
+							alt="Илюстрация поста">
+					</picture>
+				</a>
+				<p class="post-3-title"><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></p>
+				<div class="post-3-content">
+					{{ post.excerpt }}
+				</div>
+				<div class="post-3-more"><a href="{{ post.url | prepend: site.url }}">читать дальше</a></div>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="instagram-more">
+			<a href="https://www.instagram.com/sleep.consult/" target="_blank">
+				<p>читать больше в Инстаграм</p>
+			</a>
+		</div>
+
+	</main>
+
+	{% include footer.html %}
+
+</body>
+
+</html>
