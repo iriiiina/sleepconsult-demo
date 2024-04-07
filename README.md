@@ -3,9 +3,12 @@
 https://iriiiina.github.io/sleepconsult-demo/
 
 ## Run The Site
-
-    $ bundle install
-    $ bundle exec jekyll serve --watch
+```shell
+bundle install
+```
+```shell
+bundle exec jekyll serve --watch
+```
 
 ## Used Resources
 
@@ -14,6 +17,9 @@ https://iriiiina.github.io/sleepconsult-demo/
 * Squoosh https://squoosh.app/
 * HTML Checker https://validator.w3.org/nu
 * CSS Validator https://jigsaw.w3.org/css-validator/
+* Icon Collection: https://www.svgrepo.com/collection/gonzocons-line-interface-icons/
+* SEO Validator https://konversioon.ee
+* Schema Validator https://validator.schema.org
 
 ## Colors
 
@@ -22,13 +28,3 @@ https://iriiiina.github.io/sleepconsult-demo/
 * Pale Orange rgba(255, 230, 200, 1)
 * Grey rgba(100, 100, 100, 1)
 * Footer Brown rgba(100, 90, 80, 1)
-
-## TODO
-
-* сделать новую шапку
-* сделать мобильную версию новой шапки
-* сделать интро декстоп
-* сделать интро мобильную версию
-* найти новые пиктограммы
-* добавить schema теги
-* изменить обратно CNAME!!!

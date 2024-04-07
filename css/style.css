@@ -93,8 +93,19 @@ header {
     text-align: right;
 }
 
+#menu-container {
+    display: none;
+}
+
 #menu-768 {
     display: none;
+}
+
+.menu-call {
+    text-decoration: none;
+    background-color: rgba(60, 100, 130, 1);
+    color: white;
+    padding: 0.5em 1em;
 }
 
 #menu p {
@@ -113,6 +124,14 @@ header {
 
     #menu {
         display: none;
+    }
+
+    #menu-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0 1em;
     }
 
     #menu-768 {
@@ -148,19 +167,13 @@ header {
     @supports (background: url('../assets/img/bed-480px.webp')) {
         #home {
             background: url('../assets/img/bed-480px.webp') no-repeat center center;
-            height: 320px;
         }
     }
 
     @supports not (background: url('../assets/img/bed-480px.webp')) {
         #home {
             background: url('../assets/img/bed-480px.jpg') no-repeat center center;
-            height: 320px;
         }
-    }
-
-    #home div {
-        margin: 100px 0 0 0;
     }
 }
 
@@ -168,14 +181,12 @@ header {
     @supports (background: url('../assets/img/bed-640px.webp')) {
         #home {
             background: url('../assets/img/bed-640px.webp') no-repeat center center;
-            height: 427px;
         }
     }
 
     @supports not (background: url('../assets/img/bed-640px.webp')) {
         #home {
             background: url('../assets/img/bed-640px.jpg') no-repeat center center;
-            height: 427px;
         }
     }
 }
@@ -184,14 +195,12 @@ header {
     @supports (background: url('../assets/img/bed-768px.webp')) {
         #home {
             background: url('../assets/img/bed-768px.webp') no-repeat center center;
-            height: 500px;
         }
     }
 
     @supports not (background: url('../assets/img/bed-768px.webp')) {
         #home {
             background: url('../assets/img/bed-768px.jpg') no-repeat center center;
-            height: 500px;
         }
     }
 }
@@ -200,14 +209,12 @@ header {
     @supports (background: url('../assets/img/bed-1024px.webp')) {
         #home {
             background: url('../assets/img/bed-1024px.webp') no-repeat center center;
-            height: 500px;
         }
     }
 
     @supports not (background: url('../assets/img/bed-1024px.webp')) {
         #home {
             background: url('../assets/img/bed-1024px.jpg') no-repeat center center;
-            height: 500px;
         }
     }
 }
@@ -216,14 +223,12 @@ header {
     @supports (background: url('../assets/img/bed-1200px.webp')) {
         #home {
             background: url('../assets/img/bed-1200px.webp') no-repeat center center;
-            height: 500px;
         }
     }
 
     @supports not (background: url('../assets/img/bed-1200px.webp')) {
         #home {
             background: url('../assets/img/bed-1200px.jpg') no-repeat center center;
-            height: 500px;
         }
     }
 }
@@ -232,21 +237,33 @@ header {
     @supports (background: url('../assets/img/bed.webp')) {
         #home {
             background: url('../assets/img/bed.webp') no-repeat center center;
-            height: 500px;
         }
     }
 
     @supports not (background: url('../assets/img/bed.webp')) {
         #home {
             background: url('../assets/img/bed.jpg') no-repeat center center;
-            height: 500px;
         }
     }
 }
 
+#home-description {
+    margin: 2em 0;
+}
+
+@media only screen and (min-width: 1025px) {
+    #home-description {
+        margin: 10em 0 0 0;
+    }
+}
+
+#home {
+    height: 600px;
+}
+
 @media only screen and (min-width: 481px) {
-    #home div {
-        margin: 200px 0 0 0;
+    #home {
+        height: 500px;
     }
 }
 
@@ -257,11 +274,48 @@ header {
     background-size: cover;
 }
 
-#home div {
+#home-description {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    width: 330px;
-    padding: 10px 30px;
+    padding: 1em 2em;
+}
+
+#home-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.home-button {
+    border: 1px solid rgba(60, 100, 130, 0.3);
+    margin: 0em;
+    padding: 0 1em;
+    background-color: rgba(255, 230, 200, 1);
+    text-align: center;
+}
+
+.home-button a {
+    text-decoration: none;
+    color: rgba(60, 100, 130, 1);
+}
+
+@media only screen and (min-width: 768px) {
+    #home-buttons {
+        justify-content: space-evenly;
+        gap: 2em;
+    }
+
+    .home-button {
+        margin: 2em 0;
+        transition: background-color 0.5s ease;
+    }
+
+    .home-button:hover {
+        background-color: white;
+        cursor: pointer;
+    }
 }
 
 /* INTRO */
@@ -944,4 +998,11 @@ footer a {
     .footer-icon-svg:hover {
         fill: rgba(240, 180, 60, 1);
     }
+}
+
+/* LIBRARIES */
+
+#google-tag-manager {
+    display: none;
+    visibility: hidden
 }

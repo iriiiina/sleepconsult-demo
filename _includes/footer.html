@@ -1,27 +1,31 @@
 <footer>
 
-    <div id="footer">
+    <div id="footer" itemscope itemtype="https://schema.org/LocalBusiness">
 
         <div>
-            <p>SleepConsult OÜ</p>
+            <p itemprop="legalName">SleepConsult OÜ</p>
             <p>Регистрационный номер: 16135015</p>
-            <p>Estonia, Harju maakond, Tallinn 11913</p>
-            <p>Pirita linnaosa, Villkäpa tn 6-3</p>
+            <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="addressCountry">Estonia</span>, Harju maakond, <span
+                    itemprop="addressLocality">Tallinn</span> <span itemprop="postalCode">11913</span>, <br>
+                Pirita linnaosa, <span itemprop="streetAddress">Villkäpa tn 6-3</span>
+            </p>
         </div>
 
-        <div>
-            <p>AS SEB Pank</p>
+        <div itemscope itemtype="https://schema.org/BankAccount">
+            <p itemprop="name">AS SEB Pank</p>
             <p>SWIFT/BIC EEUHEE2X</p>
             <p>IBAN: EE481010220289972224</p>
         </div>
 
         <div>
-            <p>Ольга Мырсикова</p>
-            <p><a href="mailto:olgamyrsikova@gmail.com">olgamyrsikova@gmail.com</a></p>
+            <p itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Ольга
+                    Мырсикова</span></p>
+            <p itemprop="email"><a href="mailto:olgamyrsikova@gmail.com">olgamyrsikova@gmail.com</a></p>
 
             <p>
                 <a class="footer-icon-a" href="https://www.instagram.com/sleep.consult"
-                    aria-label="Instagram аккаунт @sleep.consult" title="Instagram: @sleep.consult">
+                    aria-label="Instagram аккаунт @sleep.consult" title="Instagram: @sleep.consult" itemprop="sameAs">
                     <svg class="footer-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title>Instagram аккаунт @sleep.consult</title>
                         <path
@@ -30,7 +34,7 @@
                 </a>
 
                 <a class="footer-icon-a" href="https://www.facebook.com/OlgaMyrsikova"
-                    aria-label="Facebook аккаунт @OlgaMyrsikova" title="Facebook: @OlgaMyrsikova">
+                    aria-label="Facebook аккаунт @OlgaMyrsikova" title="Facebook: @OlgaMyrsikova" itemprop="sameAs">
                     <svg class="footer-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title>Facebook аккаунт @OlgaMyrsikova</title>
                         <path
@@ -39,7 +43,7 @@
                 </a>
 
                 <a class="footer-icon-a" href="whatsapp://send?phone=3725236517"
-                    aria-label="WhatsApp аккаунт +3725236517" title="WhatsApp: +3725236517">
+                    aria-label="WhatsApp аккаунт +3725236517" title="WhatsApp: +3725236517" itemprop="sameAs">
                     <svg class="footer-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title>WhatsApp аккаунт +3725236517</title>
                         <path
@@ -48,7 +52,7 @@
                 </a>
 
                 <a class="footer-icon-a" href="https://t.me/+yfNw93NEpnoyZGJi"
-                    aria-label="Telegram канал @Sleep.Consult" title="Telegram: @Sleep.Consult">
+                    aria-label="Telegram канал @Sleep.Consult" title="Telegram: @Sleep.Consult" itemprop="sameAs">
                     <svg class="footer-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title>Telegram канал @Sleep.Consult</title>
                         <path
@@ -57,7 +61,7 @@
                 </a>
 
                 <a class="footer-icon-a" href="viber://chat?number=%2B3725236517" aria-label="Viber аккаунт +3725236517"
-                    title="Viber: +3725236517">
+                    title="Viber: +3725236517" itemprop="sameAs">
                     <svg class="footer-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title>Viber аккаунт +3725236517</title>
                         <path
@@ -66,7 +70,7 @@
                 </a>
 
                 <a class="footer-icon-a" href="https://vk.com/sleep.consult"
-                    aria-label="ВКонтакте аккаунт sleep.consult" title="ВКонтакте: sleep.consult">
+                    aria-label="ВКонтакте аккаунт sleep.consult" title="ВКонтакте: sleep.consult" itemprop="sameAs">
                     <svg class="footer-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title>ВКонтакте sleep.consult</title>
                         <path
@@ -75,7 +79,8 @@
                 </a>
 
                 <a class="footer-icon-a" href="https://www.youtube.com/@SleepConsult-vi8nn"
-                    aria-label="YouTube аккаунт @SleepConsult-vi8nn" title="YouTube аккаунт @SleepConsult-vi8nn">
+                    aria-label="YouTube аккаунт @SleepConsult-vi8nn" title="YouTube аккаунт @SleepConsult-vi8nn"
+                    itemprop="sameAs">
                     <svg class="footer-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title>YouTube аккаунт @SleepConsult-vi8nn</title>
                         <path
@@ -86,6 +91,10 @@
         </div>
     </div>
 
-    <p id="vimo">Сделано в <a href="https://vimo.ee/" title="Vimo OÜ" hreflang="en">Vimo</a></p>
+    <p id="vimo" itemscope itemtype="https://schema.org/OnlineBusiness">
+        Сделано в <a href="https://vimo.ee/" title="Vimo OÜ" hreflang="en" itemprop="url">
+            <span itemprop="name">Vimo</span>
+        </a>
+    </p>
 
 </footer>

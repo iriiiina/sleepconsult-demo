@@ -54,15 +54,15 @@
 
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/BlogPosting" itemid="{{ post.url }}">
 
 	{% include header-post.html %}
 
 	<main>
 
 		<div id="post">
-			<h1 id="post-title">{{ page.title }}</h1>
-			<div id="post-content">
+			<h1 id="post-title" itemprop="name">{{ page.title }}</h1>
+			<div id="post-content" itemprop="articleBody">
 				{{ content }}
 			</div>
 		</div>
@@ -71,17 +71,18 @@
 
 		<div id="post-3">
 			{% for post in site.posts limit:3 %}
-			<div class="post-3-preview">
+			<div class="post-3-preview" itemscope itemtype="https://schema.org/BlogPosting" itemid="{{ post.url }}">
 				<a href="{{ post.url | prepend: site.url }}">
 					<picture>
 						<source srcset="{{ site.url}}/assets/post{{ post.url }}-500px.webp" type="image/webp">
 						<source srcset="{{ site.url}}/assets/post{{ post.url }}-500px.png" type="image/png">
 						<img class="post-3-image" src="{{ site.url}}/assets/post{{ post.url }}-500px.png" loading="lazy"
-							alt="Илюстрация поста">
+							alt="Илюстрация поста" itemprop="thumbnail">
 					</picture>
 				</a>
-				<p class="post-3-title"><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></p>
-				<div class="post-3-content">
+				<p class="post-3-title" itemprop="name"><a href="{{ post.url | prepend: site.url }}">
+						{{ post.title }}</a></p>
+				<div class="post-3-content" itemprop="abstract">
 					{{ post.excerpt }}
 				</div>
 				<div class="post-3-more"><a href="{{ post.url | prepend: site.url }}">читать дальше</a></div>
