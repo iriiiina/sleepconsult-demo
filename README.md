@@ -17,7 +17,7 @@ bundle exec jekyll serve --watch
 * Squoosh https://squoosh.app/
 * HTML Checker https://validator.w3.org/nu
 * CSS Validator https://jigsaw.w3.org/css-validator/
-* Icon Collection: https://www.svgrepo.com/collection/gonzocons-line-interface-icons/
+* Icon Collection https://www.svgrepo.com/collection/simple-line-vectors/
 * SEO Validator https://konversioon.ee
 * Schema Validator https://validator.schema.org
 
