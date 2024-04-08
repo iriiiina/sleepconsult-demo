@@ -598,6 +598,7 @@ header {
 
     .course-button:hover {
         background-color: rgba(60, 100, 130, 1);
+        cursor: pointer;
     }
 
     .course-button a:hover {
