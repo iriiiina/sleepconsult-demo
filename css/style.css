@@ -659,6 +659,13 @@ header {
     text-align: left;
 }
 
+.price-highlight {
+    text-align: center;
+    border: 1px solid rgba(240, 180, 60, 1);
+    border-radius: 1em;
+    padding: 0.5em 1em;
+}
+
 .price-icon {
     height: 100px;
     margin: 20px 0px 0px 0px;
